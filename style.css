@@ -6,7 +6,11 @@ body {
     background: #e4ebf5;
 }
 
+img.logo {
+    width: 50%;
+}
 .container {
+    position: relative;
     background: #FDFDFD;
     padding: 20px;
     padding-bottom: 1px;
