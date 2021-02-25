@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+
+  * { box-sizing: border-box; }
+
+  body {
+      margin: 100px;
+      background-image: linear-gradient(to bottom right, #E0E5EB, #A7B7C8);
+  }
+
+  .container {
+      background: #FDFDFD;
+      //background-image: linear-gradient(to bottom right, #1f2933, #323f4b);
+      padding: 20px;
+      padding-bottom: 1px;
+      //color: white;
+      border-radius: 10px;
+      width: 350px;
+
+      box-shadow: 1px 1px 15px 2px #A6A6A6;
+     //box-shadow: inset 0px 0px 20px 10px #25303C;
+      margin: auto;
+      font-family: "Microsoft YaHei UI Light";
+  }
+
+  input[type=text], input[type=password]  {
+      width: 100%;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 4px;
+      border: none;
+      color: black;
+      font-size: 16px;
+      transition: .2s;
+      background-color: #DEE3E7;
+      font-weight: bold;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+      outline: none;
+      border: 2px solid #1f2933;
+  }
+  input[type=text]:hover, input[type=password]:hover {
+       background: #CFCFCF;
+  }
+
+  input[type=submit] {
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #00CC99;
+      color: white;
+      transition: .4s;
+      width: 100%
+  }
+  input[type=submit]:hover {
+      cursor: pointer;
+      background: #212121;
+  }
+
+  label {
+      display: inline-block;
+      font-size: 14px;
+  }
+  span a {
+      color: #6B6B6B;
+  }
+
+  .row {
+      //border: 1px solid yellow;
+      margin-bottom: 20px;
+  }
+
+  form {
+     // border: 1px solid green;
+  }
+  hr {
+      border: 1px solid #00CC99;
+      opacity: .5;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h3 style="color:#00C291">Login</h3>
+            <p style="font-size:14px;">
+                Please login with your username and password.
+                if you dont have an account please signup.
+            </p>
+            <hr>
+        </div>
+        <form action="#">
+            <div class="row">
+               <label for="uname">Username</label>
+               <input type="text" id="uname" name="username" placeholder="username">
+            </div>
+
+            <div class="row">
+               <label for="password" id="password">Password</label>
+               <input type="password" id="password"  name="password"  placeholder="password">
+            </div>
+            <div class="row">
+                <input type="checkbox"> Remember me
+                <span style="float:right;font-size:12px"><a href="#">forgot password?</a></span>
+            </div>
+            <div class="row">
+                <input type="submit" value="LOGIN">
+            </div>
+            <div class="row" style="text-align:center">
+                <hr>
+            </div>
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <input type="submit" value="signup">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
