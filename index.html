@@ -9,31 +9,31 @@
 <body>
 
     <div class="container">
-        <img src="logo/microsoft.png" class="logo">
-        <div class="row">
-            <!-- <h3 style="color:#00C291">Login</h3> -->
+        <div class="header">
+            <img src="logo/microsoft.png" class="logo">
             <p style="font-size:14px;">
                 Please login with your username and password.
                 if you dont have an account please signup.
             </p>
-            <hr>
+           
         </div>
         <form action="#">
             <div class="row">
                <label for="uname">Username</label>
-               <input type="text" id="uname" name="username" placeholder="username">
-            </div>
+               <!-- <input type="color"> -->
+               <input type="text" id="uname" name="username" placeholder="">
 
-            <div class="row">
                <label for="password" id="password">Password</label>
-               <input type="password" id="password"  name="password"  placeholder="password">
+               <input type="password" id="password"  name="password"  placeholder="">
             </div>
             <div class="row">
-                <input type="checkbox"> Remember me
-                <span style="float:right;font-size:12px"><a href="#">forgot password?</a></span>
+                <input type="checkbox"> <span>remember me</span> 
+                <span style="float:right;font-size:12px">
+                    <a href="#">forgot password?</a>
+                </span>
             </div>
             <div class="row">
-                <input type="submit" value="LOGIN">
+                <input type="submit" value="Log in">
             </div>
             <div class="row" style="text-align:center">
                 <hr>
@@ -43,7 +43,8 @@
             </div>
 
             <div class="row">
-                <input type="submit" value="signup">
+                <input type="submit" value="Sign up">
+                <span>if you dont have an account please sign up</span>
             </div>
         </form>
     </div>

@@ -1,5 +1,8 @@
 
-* { box-sizing: border-box; }
+* { 
+    /* border: 1px dashed blue; */
+    box-sizing: border-box; 
+}
 
 body {
     margin: 100px;
@@ -11,7 +14,7 @@ img.logo {
 }
 .container {
     position: relative;
-    background: #FDFDFD;
+    background: #fafafa;
     padding: 20px;
     padding-bottom: 1px;
     border-radius: 10px;
@@ -20,9 +23,13 @@ img.logo {
     margin: auto;
     font-family: "Microsoft YaHei UI Light";
 }
-
+.header {
+    padding: 5px;
+    background: #f3f3f3;
+}
 input[type=text], input[type=password]  {
     width: 100%;
+    outline: none;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 4px;
@@ -35,24 +42,29 @@ input[type=text], input[type=password]  {
 }
 input[type=text]:focus, input[type=password]:focus {
     outline: none;
-    border: 2px solid #1f2933;
+    /* border: 2px solid #1f2933; */
 }
 input[type=text]:hover, input[type=password]:hover {
      background: #CFCFCF;
 }
 
+#login {
+    background-color: rgba(128, 185, 38, 0.8);
+}
 input[type=submit] {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #00CC99;
+    /* border: 1px solid #80B926; */
+    background-color: rgba(128, 185, 38, 0.5);
+    /* background-color: #30A0DA; */
     color: white;
     transition: .4s;
     width: 100%
 }
 input[type=submit]:hover {
     cursor: pointer;
-    background: #212121;
+    background: rgba(128, 185, 38, 1);
 }
 
 label {
@@ -64,10 +76,15 @@ span a {
 }
 
 .row {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 hr {
-    border: 1px solid #00CC99;
+    border: 1px solid #80B926;
     opacity: .5;
+}
+
+span {
+    font-size: 14px;
+    color: #333;
 }
