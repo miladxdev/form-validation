@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Untitled</title>
+    <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -15,40 +15,40 @@
                 Please login with your username and password.
                 if you dont have an account please signup.
             </p>
-           
         </div>
         <form action="#">
             <div class="row">
-               <label for="uname">Username</label>
-               <!-- <input type="color"> -->
-               <input type="text" id="uname" name="username" placeholder="">
-
-               <label for="password" id="password">Password</label>
-               <input type="password" id="password"  name="password"  placeholder="">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="username" placeholder="">
             </div>
+
+            <div class="row">
+                <label for="password" id="password">Password</label>
+                <input type="password" id="password"  name="password"  placeholder="">
+            </div>
+
             <div class="row">
                 <input type="checkbox"> <span>remember me</span> 
                 <span style="float:right;font-size:12px">
                     <a href="#">forgot password?</a>
                 </span>
             </div>
-            <div class="row">
-                <input type="submit" value="Log in">
-            </div>
-            <div class="row" style="text-align:center">
-                <hr>
-            </div>
-            <div class="row">
 
+            <div class="row">
+                  <input type="submit" value="Log in">
+            </div>
+
+            <div class="row">
+                <hr>
             </div>
 
             <div class="row">
                 <input type="submit" value="Sign up">
                 <span>if you dont have an account please sign up</span>
             </div>
+
         </form>
     </div>
-
 </body>
 
 </html>
