@@ -27,6 +27,7 @@ body {
 }
 .header {
     padding: 5px;
+    border-radius: 5px;
     background: #f3f3f3;
 }
 .header img {
@@ -44,14 +45,19 @@ input[type=text], input[type=password]  {
     
     transition: .2s;
     background-color: #DEE3E7;
-    font-weight: bold;
+    background: rgba(47, 161, 218,0.1);
+    background: #ececec;
+
 }
 input[type=text]:focus, input[type=password]:focus {
-    outline: none;
-    /* border: 2px solid #1f2933; */
+    background: rgba(47, 161, 218,0.2);
+    background-color: rgba(250, 183, 24, 0.2);
 }
 input[type=text]:hover, input[type=password]:hover {
-     background: #CFCFCF;
+    background: rgba(47, 161, 218,0.2);
+}
+input[type=text]:invalid, input[type=password]:invalid {
+    border: 1px dashed rgb(234, 82, 40);
 }
 
 #login {
@@ -59,13 +65,16 @@ input[type=text]:hover, input[type=password]:hover {
 }
 input[type=submit] {
     border: none;
+    outline: none;
     padding: 10px 20px;
     border-radius: 5px;
+    
     /* border: 1px solid #80B926; */
-    background-color: rgba(128, 185, 38, 0.5);
+    background-color: rgba(128, 185, 38, .6);
+    /* background-color: rgba(250, 183, 24, 0.2); */
     /* background-color: #30A0DA; */
     color: white;
-    transition: .4s;
+    transition: .2s;
     width: 100%
 }
 input[type=submit]:hover {
@@ -87,7 +96,7 @@ span a {
 }
 
 hr {
-    border: 1px solid #80B926;
+    border: 1px dashed #80B926;
     opacity: .5;
 }
 

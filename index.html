@@ -7,8 +7,8 @@
 </head>
 
 <body>
-
     <div class="container">
+        
         <div class="header">
             <img src="logo/microsoft.png" class="logo">
             <p style="font-size:14px;">
@@ -18,13 +18,19 @@
         </div>
         <form action="#">
             <div class="row">
-                <label for="uname">Username</label>
-                <input type="text" id="uname" name="username" placeholder="">
+                <label for="username">Username</label>
+                <input 
+                    type="text"
+                    name="username" 
+                    id="username"
+                    required
+                    pattern="[a-z]{1,15}"
+                    title="Username should only contain lowercase letters. e.g. john">
             </div>
 
             <div class="row">
                 <label for="password" id="password">Password</label>
-                <input type="password" id="password"  name="password"  placeholder="">
+                <input type="password" id="password"  name="password" required minlength="8" maxlength="12">
             </div>
 
             <div class="row">
@@ -43,10 +49,11 @@
             </div>
 
             <div class="row">
-                <input type="submit" value="Sign up">
+                <input type="submit" value="Sign up" name="signup">
+            </div>
+            <div class="row">
                 <span>if you dont have an account please sign up</span>
             </div>
-
         </form>
     </div>
 </body>
