@@ -34,35 +34,36 @@ body {
     width: 50%;
 }
 
-input[type=text], input[type=password]  {
+input#username, input#password {
     width: 100%;
     outline: none;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 4px;
     border: none;
-    color: black;
+    color: #333;
     
     transition: .2s;
-    background-color: #DEE3E7;
-    background: rgba(47, 161, 218,0.1);
-    background: #ececec;
+    /* background-color: #DEE3E7;
+    background: rgba(47, 161, 218,0.1); */
+    background: hsl(0, 0%, 95%);
+}
+input#username:focus, input#password:focus {
+    background-color: hsl(0, 0%, 90%);
+}
+input#username:hover, input#password:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+input#username:valid, input#password:valid {
+    border: 2px dashed rgba(47, 161, 218,0.4);
+    border: 2px dashed rgba(128, 185, 38, 1);
+}
+input#username:invalid, input#password:invalid {
+    border: 2px dashed rgba(255, 66, 66, 0.76);
+    /* background: rgba(255, 35, 27, 0.2); */
+}
 
-}
-input[type=text]:focus, input[type=password]:focus {
-    background: rgba(47, 161, 218,0.2);
-    background-color: rgba(250, 183, 24, 0.2);
-}
-input[type=text]:hover, input[type=password]:hover {
-    background: rgba(47, 161, 218,0.2);
-}
-input[type=text]:invalid, input[type=password]:invalid {
-    border: 1px dashed rgb(234, 82, 40);
-}
 
-#login {
-    background-color: rgba(128, 185, 38, 0.8);
-}
 input[type=submit] {
     border: none;
     outline: none;
@@ -70,16 +71,16 @@ input[type=submit] {
     border-radius: 5px;
     
     /* border: 1px solid #80B926; */
-    background-color: rgba(128, 185, 38, .6);
     /* background-color: rgba(250, 183, 24, 0.2); */
-    /* background-color: #30A0DA; */
+    background: #30a1daa9;
     color: white;
-    transition: .2s;
+    transition: .8s;
     width: 100%
 }
 input[type=submit]:hover {
     cursor: pointer;
-    background: rgba(128, 185, 38, 1);
+    background: #2c92c5e0;
+
 }
 
 label {
@@ -96,7 +97,7 @@ span a {
 }
 
 hr {
-    border: 1px dashed #80B926;
+    border: 1px solid #6db5da;
     opacity: .5;
 }
 
