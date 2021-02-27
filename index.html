@@ -3,7 +3,8 @@
 <head>
     <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,26 +20,31 @@
         <form action="#">
             <div class="row">
                 <label for="username">Username</label>
-                <input 
-                    type="text"
-                    name="username" 
-                    id="username"
-                    required
-                    pattern="[a-z]{1,15}"
-                    title="Username should only contain lowercase letters. e.g. john">
+                <div class="input-container">
+                    <i class="fa fa-user"></i>
+                    <input 
+                        type="text"
+                        name="username" 
+                        id="username"
+                        required
+                        pattern="[a-z]{1,15}"
+                        title="Username should only contain lowercase letters. e.g. john">
+                </div>
             </div>
 
             <div class="row">
                 <label for="password" id="password">Password</label>
-                <input 
-                    type="password" 
-                    name="password" 
-                    id="password" 
-                    required 
-                    minlength="8" 
-                    maxlength="12">
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        required 
+                        minlength="8" 
+                        maxlength="12">
+                </div>
             </div>
-
             <div class="row">
                 <input type="checkbox"> <span>remember me</span> 
                 <span style="float:right;font-size:12px">
@@ -62,6 +68,7 @@
             </div>
         </form>
     </div>
+
 </body>
 
 </html>
