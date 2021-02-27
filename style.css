@@ -55,10 +55,10 @@ input#username:hover, input#password:hover {
     background-color: hsl(0, 0%, 90%);
 }
 input#username:valid, input#password:valid {
-    border: 1px solid rgb(161, 238, 36);
+    border: 1px dashed rgb(161, 238, 36);
 }
 input#username:invalid, input#password:invalid {
-    border: 1px solid rgb(255, 40, 32);
+    border: 1px dashed rgb(255, 40, 32);
     /* background: rgba(255, 35, 27, 0.2); */
 }
 

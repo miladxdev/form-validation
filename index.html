@@ -26,9 +26,10 @@
                         type="text"
                         name="username" 
                         id="username"
+                        autocomplete="off"
                         required
-                        pattern="[a-z]{1,15}"
-                        title="Username should only contain lowercase letters. e.g. john">
+                        pattern="[a-zA-Z-0-9_]{1,12}"
+                        title="Username should only contain letters and numbers">
                 </div>
             </div>
 
