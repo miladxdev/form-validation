@@ -25,17 +25,32 @@ body {
     box-shadow: 2px 2px 20px 0px #e0e0e0;
     font-family: "Microsoft YaHei UI Light";
 }
-.header {
-    padding: 5px;
-    border-radius: 5px;
-    background: #f3f3f3;
-}
+
 img {
     width: 60%;
-    
-}
 
+}
+.form-control {
+    position: relative;
+    /* border: 1px dashed blue; */
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.form-control i {
+    position: absolute;
+    font-size: 18px;
+    top: 40%;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
 input#username, input#password {
+    display: block;
     width: 100%;
     outline: none;
     padding: 10px 35px;

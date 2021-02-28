@@ -13,38 +13,41 @@
         <img src="logo/microsoft.png" class="logo">
         <p style="font-size:14px;">
             Please login with your username and password.
-            if you dont have an account please signup.
+            if you dont have an account please sign up.
         </p>
         
         <form action="#">
-            <div class="row">
+            <div class="form-control">
                 <label for="username">Username</label>
-                <div class="input-container">
-                    <i class="fa fa-user"></i>
-                    <input 
-                        type="text"
-                        name="username" 
-                        id="username"
-                        autocomplete="off"
-                        required
-                        pattern="[a-zA-Z-0-9_]{1,12}"
-                        title="Username should only contain letters and numbers">
-                </div>
+                <!-- <i class="fa fa-user"></i> -->
+                <input 
+                    type="text"
+                    name="username" 
+                    id="username"
+                    autocomplete="off"
+                    required
+                    pattern="[a-zA-Z-0-9_]{1,12}"
+                    title="Username should only contain letters and numbers">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message:</small>
             </div>
 
-            <div class="row">
+            <div class="form-control">
                 <label for="password" id="password">Password</label>
-                <div class="input-container">
-                    <i class="fa fa-lock"></i>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password" 
-                        required 
-                        minlength="8" 
-                        maxlength="12">
-                </div>
+                <!-- <i class="fa fa-lock"></i> -->
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    required 
+                    minlength="8" 
+                    maxlength="12">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message:</small>
             </div>
+         
             <div class="row">
                 <input type="checkbox"> <span>remember me</span> 
                 <span style="float:right;font-size:12px">
