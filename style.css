@@ -1,4 +1,3 @@
-
 * { 
     /* border: 1px dashed blue; */
     box-sizing: border-box; 
@@ -6,14 +5,15 @@
     padding: 0;
 }
 
+
 body {
     background: #e4ebf5;
-
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .container {
     position: relative;
@@ -25,11 +25,12 @@ body {
     box-shadow: 2px 2px 20px 0px #e0e0e0;
     font-family: "Microsoft YaHei UI Light";
 }
+.container img { width: 60%; }
 
-img {
-    width: 60%;
 
-}
+.row { margin-top: 20px; }
+
+
 .form-control {
     position: relative;
     /* border: 1px dashed blue; */
@@ -38,6 +39,7 @@ img {
 }
 .form-control i {
     position: absolute;
+    color: #333;
     font-size: 18px;
     top: 50%;
     left: 10px;
@@ -48,6 +50,12 @@ img {
     left: 0;
     visibility: hidden;
 } */
+form label {
+    display: inline-block;
+    font-size: 14px;
+}
+
+
 input#username, input#password {
     display: block;
     width: 100%;
@@ -77,61 +85,31 @@ input#username:invalid, input#password:invalid {
     /* background: rgba(255, 35, 27, 0.2); */
 }
 
-.input-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid red; */
-}
-.input-container i {
-    color: #333;
-    font-size: 20px;
-    left: 10px;
-    position: absolute;
-}
 
-
-
-
-
-input[type=submit] {
+input#login, input#signup {
     border: none;
     outline: none;
     padding: 10px 20px;
     border-radius: 5px;
-    
-    /* border: 1px solid #80B926; */
-    /* background-color: rgba(250, 183, 24, 0.2); */
     background: #30a1daa9;
     color: white;
     transition: .8s;
     width: 100%
 }
-input[type=submit]:hover {
+input#login:hover, input#signup:hover {
     cursor: pointer;
     background: #2c92c5e0;
-    /* background: rgba(128, 185, 38, 1); */
 }
 
-label {
-    display: inline-block;
-    font-size: 14px;
-}
-span a {
-    color: #6B6B6B;
-}
-
-.row {
-    /* border: 1px solid red; */
-    margin-top: 20px;
-}
 
 hr {
     border: 1px solid #6db5da;
     opacity: .5;
 }
-
 span {
     font-size: 14px;
     color: #333;
+}
+span a {
+    color: grey;
 }
