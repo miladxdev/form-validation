@@ -18,6 +18,7 @@ body {
 .container {
     position: relative;
     background: #fafafa;
+    
     padding: 20px;
     border-radius: 10px;
     width: 350px;
@@ -36,7 +37,9 @@ body {
     height: 70px;
     margin: auto;
     border-radius: 50%;
+    box-shadow: 0 0 10px hsl(0, 0%, 80%);
     color: white;
+    text-shadow: 0 0 4px white;
     font-size: 28px;
     display: flex;
     justify-content: center;
@@ -105,11 +108,12 @@ form label {
 input#login, #signup {
     border: none;
     outline: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 5px;
-  
+    font-size: .96rem;
     background: rgba(160, 142, 240, 0.8);
     color: hsla(251, 77%, 0%, 0.6);
+    color: white;
     transition: .3s;
     width: 100%;
 }
