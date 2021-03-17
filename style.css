@@ -25,7 +25,24 @@ body {
     box-shadow: 2px 2px 20px 0px #e0e0e0;
     font-family: "Microsoft YaHei UI Light";
 }
-.container img { width: 60%; }
+.container img { 
+    transform: translateX(-15px);
+    width: 60%;
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(62, 77, 214), rgb(190, 72, 108));
+}
 
 
 .row { margin-top: 20px; }
@@ -56,7 +73,7 @@ form label {
 }
 
 
-input#username, input#password {
+.input {
     display: block;
     width: 100%;
     outline: none;
@@ -71,40 +88,41 @@ input#username, input#password {
     background: rgba(47, 161, 218,0.1); */
     background: hsl(0, 0%, 95%);
 }
-input#username:focus, input#password:focus {
+.input:focus, .input:focus {
     background-color: hsl(0, 0%, 90%);
 }
-input#username:hover, input#password:hover {
+.input:hover, .input:hover {
     background-color: hsl(0, 0%, 90%);
 }
-input#username:valid, input#password:valid {
+/* .input:valid {
     border: 2px solid #2ecc71;
 }
-input#username:invalid, input#password:invalid {
+.input:invalid {
     border: 2px solid #e74c3c;
-    /* background: rgba(255, 35, 27, 0.2); */
-}
+} */
 
 
-input#login, input#signup {
+input#login, #signup {
     border: none;
     outline: none;
     padding: 10px 20px;
     border-radius: 5px;
-    background: #30a1daa9;
-    color: white;
+  
+    background: rgba(160, 142, 240, 0.6);
+    color: hsla(251, 77%, 20%, 0.6);
     transition: .8s;
     width: 100%
 }
-input#login:hover, input#signup:hover {
+input#login:hover, #signup:hover {
     cursor: pointer;
     background: #2c92c5e0;
 }
 
 
+
 hr {
-    border: 1px solid #6db5da;
-    opacity: .5;
+    border: 1px solid rgba(160, 142, 240, 0.6);
+    opacity: .4;
 }
 span {
     font-size: 14px;
@@ -112,4 +130,14 @@ span {
 }
 span a {
     color: grey;
+}
+
+
+#signup-container {
+    position: absolute;
+    display: none;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: inherit;
+    border-radius: inherit;
+    padding: inherit;
 }

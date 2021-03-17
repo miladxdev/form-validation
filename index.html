@@ -9,12 +9,15 @@
 
 <body>
     <div class="container">
-
-        <img src="logo/microsoft.png" class="logo">
-        <p style="font-size:14px;">
-            Please login with your username and password.
-            if you dont have an account please sign up.
-        </p>
+        <div class="logo">W</div>
+        <!-- <img src="logo/microsoft.png" class="logo"> -->
+        <div class="row">
+            <p style="font-size:14px;">
+                Please login with your username and password.
+                if you dont have an account please sign up.
+            </p>
+        </div>
+        
         
         <form action="#">
             <div class="form-control">
@@ -24,6 +27,7 @@
                     type="text"
                     name="username" 
                     id="username"
+                    class="input"
                     autocomplete="off"
                     required
                     pattern="[a-zA-Z-0-9_]{1,12}"
@@ -39,7 +43,8 @@
                 <input 
                     type="password" 
                     name="password" 
-                    id="password" 
+                    id="password"
+                    class="input"
                     required
                     minlength="8" 
                     maxlength="12">
@@ -64,14 +69,105 @@
             </div>
 
             <div class="row">
-                <input type="submit" value="Sign up" id="signup">
+                <button type="button" id="signup">sign up</button>
             </div>
             <div class="row">
-                <span>if you dont have an account please sign up</span>
+                <span>Alredy have an account? sign up</span>
             </div>
+        </form>
+
+
+
+        <div id="signup-container">
+
+        <form action="#">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <i class="fa fa-user"></i>
+                <input 
+                    type="text"
+                    name="username" 
+                    id="username1"
+                    class="input"
+                    autocomplete="off"
+                    required
+                    pattern="[a-zA-Z-0-9_]{1,12}"
+                    title="Username should only contain letters and numbers">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i> -->
+                <!-- <small>Error message:</small> -->
+            </div>
+
+            <div class="form-control">
+                <label for="password" id="password">phone number</label>
+                <i class="fa fa-lock"></i>
+                <input 
+                    type="text" 
+                    name="password" 
+                    id="password2" 
+                    class="input"
+                    required
+                    minlength="8" 
+                    maxlength="12">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i> -->
+                <!-- <small>Error message:</small> -->
+            </div>
+
+            <div class="form-control">
+                <label for="password" id="password">Email</label>
+                <i class="fa fa-lock"></i>
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password2" 
+                    class="input"
+                    required
+                    minlength="8" 
+                    maxlength="12">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i> -->
+                <!-- <small>Error message:</small> -->
+            </div>
+
+            <div class="form-control">
+                <label for="password" id="password">set Password</label>
+                <i class="fa fa-lock"></i>
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password1"
+                    class="input"
+                    required
+                    minlength="8" 
+                    maxlength="12">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i> -->
+                <!-- <small>Error message:</small> -->
+            </div>
+            <div class="form-control">
+                <label for="password" id="password">confirm password</label>
+                <i class="fa fa-lock"></i>
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password2" 
+                    class="input"
+                    required
+                    minlength="8" 
+                    maxlength="12">
+                <!-- <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i> -->
+                <!-- <small>Error message:</small> -->
+            </div>
+            
         </form>
     </div>
 
+    </div>
+
+    
+    
 </body>
 
 </html>
