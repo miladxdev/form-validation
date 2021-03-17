@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, rgb(62, 77, 214), rgb(190, 72, 108));
+    background: linear-gradient(to bottom right, rgb(73, 87, 212), rgb(226, 86, 128));
 }
 
 
@@ -108,14 +108,14 @@ input#login, #signup {
     padding: 10px 20px;
     border-radius: 5px;
   
-    background: rgba(160, 142, 240, 0.6);
-    color: hsla(251, 77%, 20%, 0.6);
-    transition: .8s;
-    width: 100%
+    background: rgba(160, 142, 240, 0.8);
+    color: hsla(251, 77%, 0%, 0.6);
+    transition: .3s;
+    width: 100%;
 }
 input#login:hover, #signup:hover {
     cursor: pointer;
-    background: #2c92c5e0;
+    background: hsl(251, 100%, 75%);
 }
 
 
@@ -127,6 +127,7 @@ hr {
 span {
     font-size: 14px;
     color: #333;
+    text-align: center;
 }
 span a {
     color: grey;
