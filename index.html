@@ -1,174 +1,126 @@
-﻿<!DOCTYPE HTML>
+﻿<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Form Validation</title>
-    <link rel="stylesheet" href="style.css">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="header">
+        <img src="header.svg" alt="header" />
         <div class="logo">W</div>
-        <!-- <img src="logo/microsoft.png" class="logo"> -->
+      </div>
+
+      <!-- <img src="logo/microsoft.png" class="logo"> -->
+      <div class="row">
+        <p style="font-size: 14px; text-align: center">Please login with your username and password. if you dont have an account please sign up.</p>
+      </div>
+
+      <form action="#">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input"
+            autocomplete="off"
+            minlength="4"
+            maxlength="12"
+            required
+            pattern="[a-zA-Z-0-9_]{1,12}"
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="password" id="password">Password</label>
+          <i class="fa fa-lock"></i>
+          <input type="password" name="password" id="password" class="input" required minlength="8" maxlength="12" />
+        </div>
+
         <div class="row">
-            <p style="font-size:14px; text-align: center;">
-                Please login with your username and password.
-                if you dont have an account please sign up.
-            </p>
+          <input type="checkbox" /> <span>remember me</span>
+          <span style="float: right; font-size: 12px">
+            <a href="#">forgot password?</a>
+          </span>
         </div>
-        
-        
+
+        <div class="row">
+          <input type="submit" value="Log in" id="login" />
+        </div>
+
+        <div class="row">
+          <hr />
+        </div>
+
+        <div class="row">
+          <button type="button" id="signup">Sign up</button>
+        </div>
+        <div class="row">
+          <span style="display: block; color: gray">Dont have an account? <u>sign up</u></span>
+        </div>
+      </form>
+
+      <div id="signup-container">
+        <div id="back-btn">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+
+        <div class="header">
+          <img src="header.svg" alt="header" />
+          <div class="logo">W</div>
+        </div>
+
         <form action="#">
-            <div class="form-control">
-                <label for="username">Username</label>
-                <i class="fa fa-user"></i>
-                <input 
-                    type="text"
-                    name="username" 
-                    id="username"
-                    class="input"
-                    autocomplete="off"
-                    required
-                    pattern="[a-zA-Z-0-9_]{1,12}"
-                    title="Username should only contain letters and numbers">
-                <!-- <i class="fa fa-check-circle"></i>
-                <i class="fa fa-exclamation-circle"></i> -->
-                <!-- <small>Error message:</small> -->
-            </div>
+          <div class="form-control">
+            <label for="username">Username</label>
+            <i class="fa fa-user"></i>
+            <input
+              type="text"
+              name="username"
+              id="username1"
+              class="input"
+              autocomplete="off"
+              minlength="4"
+              maxlength="20"
+              required
+              pattern="[a-zA-Z-0-9_]{1,12}"
+            />
+          </div>
 
-            <div class="form-control">
-                <label for="password" id="password">Password</label>
-                <i class="fa fa-lock"></i>
-                <input 
-                    type="password" 
-                    name="password" 
-                    id="password"
-                    class="input"
-                    required
-                    minlength="8" 
-                    maxlength="12">
-                <!-- <i class="fa fa-check-circle"></i>
-                <i class="fa fa-exclamation-circle"></i> -->
-                <!-- <small>Error message:</small> -->
-            </div>
-         
-            <div class="row">
-                <input type="checkbox"> <span>remember me</span> 
-                <span style="float:right;font-size:12px">
-                    <a href="#">forgot password?</a>
-                </span>
-            </div>
+          <div class="form-control">
+            <label for="password" id="password">Email</label>
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email2" id="email2" class="input" required autocomplete="off" />
+          </div>
 
-            <div class="row">
-                  <input type="submit" value="Log in" id="login">
-            </div>
+          <div class="form-control">
+            <label for="password" id="password">set Password</label>
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" id="password1" class="input" required minlength="8" maxlength="12" />
+          </div>
+          <div class="form-control">
+            <label for="password" id="password">confirm password</label>
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" id="password2" class="input" required minlength="8" maxlength="12" />
+          </div>
+          <div class="row">
+            <hr />
+          </div>
 
-            <div class="row">
-                <hr>
-            </div>
-
-            <div class="row">
-                <button type="button" id="signup">sign up</button>
-            </div>
-            <div class="row">
-                <span style="display: block;color: gray">Alredy have an account? <u>sign in</u></span>
-            </div>
+          <div class="row">
+            <button type="button" id="signup">sign up</button>
+          </div>
+          <div class="row">
+            <span style="display: block; color: grey" ;>Alredy have an account? <u>sign in</u></span>
+          </div>
         </form>
-
-        <div id="signup-container">
-
-            <div id="back-btn">
-                <i class="fa fa-arrow-left"></i>
-            </div>
-            
-            <div class="logo">W</div>
-
-            <form action="#">
-                <div class="form-control">
-                    <label for="username">Username</label>
-                    <i class="fa fa-user"></i>
-                    <input 
-                        type="text"
-                        name="username" 
-                        id="username1"
-                        class="input"
-                        autocomplete="off"
-                        required
-                        pattern="[a-zA-Z-0-9_]{1,12}"
-                        title="Username should only contain letters and numbers">
-                    <!-- <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i> -->
-                    <!-- <small>Error message:</small> -->
-                </div>
-
-                <div class="form-control">
-                    <label for="password" id="password">Email</label>
-                    <i class="fa fa-lock"></i>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password2" 
-                        class="input"
-                        required
-                        minlength="8" 
-                        maxlength="12">
-                    <!-- <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i> -->
-                    <!-- <small>Error message:</small> -->
-                </div>
-
-                <div class="form-control">
-                    <label for="password" id="password">set Password</label>
-                    <i class="fa fa-lock"></i>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password1"
-                        class="input"
-                        required
-                        minlength="8" 
-                        maxlength="12">
-                    <!-- <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i> -->
-                    <!-- <small>Error message:</small> -->
-                </div>
-                <div class="form-control">
-                    <label for="password" id="password">confirm password</label>
-                    <i class="fa fa-lock"></i>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password2" 
-                        class="input"
-                        required
-                        minlength="8" 
-                        maxlength="12">
-                    <!-- <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i> -->
-                    <!-- <small>Error message:</small> -->
-                </div>
-                <div class="row">
-                    <hr>
-                </div>
-                
-                <div class="row">
-                    <button type="button" id="signup">sign up</button>
-                </div>
-                <div class="row">
-                    <span style="display: block">Alredy have an account? <u>sign in</u></span>
-                </div>
-                
-        </form>
-    
-    
-    
-        </div>
-
+      </div>
     </div>
 
-    
     <script src="form.js"></script>
-</body>
-
+  </body>
 </html>
