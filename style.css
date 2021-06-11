@@ -7,12 +7,12 @@
 
 body {
   background: #e4ebf5;
-
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   position: relative;
   background: #fafafa;
@@ -40,13 +40,13 @@ body {
   opacity: 0.4;
   z-index: 0;
 }
+
 .logo {
   position: relative;
   width: 70px;
   height: 70px;
   margin: auto;
   border-radius: 50%;
-  /* box-shadow: 0 0 10px hsl(0, 0%, 80%); */
   color: white;
   text-shadow: 0 0 4px white;
   font-size: 28px;
@@ -112,7 +112,7 @@ form label {
 }
 
 input#login,
-button#signup {
+#signup {
   border: none;
   outline: none;
   padding: 8px 20px;
@@ -125,14 +125,14 @@ button#signup {
   width: 100%;
 }
 input#login:hover,
-button#signup:hover {
+#signup:hover {
   cursor: pointer;
   background: hsl(251, 100%, 75%);
 }
 
 hr {
-  border: 1px solid rgba(160, 142, 240, 0.6);
-  opacity: 0.4;
+  border: 1px solid rgba(160, 142, 240, 0.7);
+  opacity: 0.5;
 }
 span {
   font-size: 14px;
@@ -145,7 +145,6 @@ span a {
 
 #signup-container {
   position: absolute;
-
   width: 100%;
   top: 0;
   right: 0;
@@ -176,3 +175,9 @@ span a {
 #back-btn:hover {
   background: rgba(128, 128, 128, 0.2);
 }
+
+/* 
+  designed by Milad Gharibi
+  instagram: web.script
+  2021 C all rights reserved
+ */
