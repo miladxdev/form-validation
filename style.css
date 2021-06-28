@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
   width: 350px;
   font-size: 14px;
-  box-shadow: 0px 4px 14px 0px #d3d3d3;
+  box-shadow: 0px 4px 14px 0px #b6b6b6;
   font-family: "Microsoft YaHei UI Light";
   z-index: 0;
 }
@@ -129,6 +129,11 @@ input#login:hover,
   cursor: pointer;
   background: hsl(251, 100%, 75%);
 }
+input#login:active,
+#signup:active {
+  cursor: pointer;
+  background: hsl(251, 100%, 70%);
+}
 
 hr {
   border: 1px solid rgba(160, 142, 240, 0.7);
@@ -175,9 +180,12 @@ span a {
 #back-btn:hover {
   background: rgba(128, 128, 128, 0.2);
 }
+#back-btn:active {
+  background: rgba(128, 128, 128, 0.3);
+}
 
 /* 
   designed by Milad Gharibi
   instagram: web.script
-  2021 C all rights reserved
+  2021 © all rights reserved
  */

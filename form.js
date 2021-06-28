@@ -1,3 +1,5 @@
+// toggle signup
+
 let signupBtn = document.getElementById("signup");
 let signupElement = document.getElementById("signup-container");
 let backBtn = document.getElementById("back-btn");
